@@ -1,10 +1,20 @@
-import styled from "styled-components";
-import db from "../db.json";
-import Widget from '../src/components/Widget/index'
-import Footer from '../src/components/Footer/index'
-import GitHubCorner from '../src/components/GitHubCorner/index'
-import QuizBackground from '../src/components/QuizBackground/index'
-import QuizLogo from '../src/components/QuizLogo/index'
+/* eslint-disable no-unused-expressions */
+import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+import { useState } from 'react';
+import db from '../db.json';
+import Widget from '../src/components/Widget/index';
+import Footer from '../src/components/Footer/index';
+import GitHubCorner from '../src/components/GitHubCorner/index';
+import QuizBackground from '../src/components/QuizBackground/index';
+import QuizLogo from '../src/components/QuizLogo/index';
+
+/* eslint-disable func-names */
+/* eslint-disable no-console */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-filename-extension */
 
 // const BackgraundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -25,15 +35,43 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <Head>
+          <title>aluraQuiz - Naruto Shippuden</title>
+        </Head>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Naruto Shippuden</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>lorem ipsum dolor sit amet...</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo uma submissão por meio do react');
+
+              // router manda para a próxima página
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  console.log(infosDoEvento.target.value);
+                  // Stage
+                  // name = infosDoEvento.target.value;
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Diz ai seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -45,9 +83,9 @@ export default function Home() {
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
-        <Footer/>
+        <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/ronellyson"/>
+      <GitHubCorner projectUrl="https://github.com/ronellyson" />
     </QuizBackground>
   );
 }
