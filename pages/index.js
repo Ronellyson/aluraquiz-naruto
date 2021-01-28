@@ -10,6 +10,8 @@ import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import QuizLogo from '../src/components/QuizLogo/index';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 /* eslint-disable func-names */
 /* eslint-disable no-console */
@@ -58,26 +60,22 @@ export default function Home() {
               // router manda para a próxima página
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  // Stage
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Diz ai seu nome"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Header>
-            <h1>Naruto Shippuden</h1>
+            <h1>Quizes da Galera</h1>
           </Widget.Header>
           <Widget.Content>
             <p>lorem ipsum dolor sit amet...</p>
