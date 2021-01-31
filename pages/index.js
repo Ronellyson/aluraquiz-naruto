@@ -64,6 +64,7 @@ export default function Home() {
             <h1>Naruto Shippuden</h1>
           </Widget.Header>
           <Widget.Content>
+            <p style={{ fontSize: 16 }}>{db.description}</p>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);

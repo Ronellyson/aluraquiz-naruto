@@ -1,28 +1,136 @@
 {
   "bg": "https://images6.alphacoders.com/644/644209.jpg",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz Naruto feito na Imersão-React da Alura",
+  "description": "Teste os seus conhecimentos sobre Naruto Shippuden",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://pm1.narvii.com/6269/51fd58e979ba27a1faf5bcd5dd554114bb09645b_hq.jpg",
+      "title": "Sarutobi Azuma foi morto por quem na temporada Shippuuden?",
+      "description": "",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Deidara",
+        "Sasuke",
+        "Hidan",
+        "Gaara",
+        "Nenhum deles"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://img.quizur.com/f/img5fa979915af360.46534503.jpg?lastEdited=1604942229",
+      "title": "Naruto tinha laços muito fortes com Sasuke. Esses laços foram quebrados em qual Vale? ",
+      "description": "(cachoeira muito famosa)",
+      "answer": 1,
+      "alternatives": [
+        "Vale do Medo",
+        "Vale do Fim",
+        "Vale do Adeus",
+        "Vale da Morte",
+        "Vale Konoha"
+      ]
+    },
+    {
+      "image": "https://uploads.spiritfanfiction.com/fanfics/capitulos/201708/so-let-me-teach-you-10132354-260820172239.jpg",
+      "title": "Quem é a paixão de Hinata?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Sasuke",
+        "Naruto",
+        "Rock Lee",
+        "Gaara",
+        "Kiba"
+      ]
+    },
+    {
+      "image": "https://i.ytimg.com/vi/l3Ety2nq6S4/maxresdefault.jpg",
+      "title": "Quando Naruto e Sasuke brigaram, Naruto antes de perder a luta deixou algo na bandana de Sasuke, o que foi?",
+      "description": "",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Deixou um risco reto",
+        "Deixou uma estrela",
+        "Deixou um triângulo",
+        "Deixou 6 gotas de sangue",
+        "Deixou a bandana toda cortada"
+      ]
+    },
+    {
+      "image": "https://sm.ign.com/ign_br/screenshot/default/blob_6rgf.png",
+      "title": "Quem lutou e derrotou o Sasori?",
+      "description": "",
+      "answer": 4,
+      "alternatives": [
+        "Tsunade e Kankuro",
+        "Gaara e TenTen",
+        "Jiraya e Sai",
+        "Naruto e Kakashi",
+        "Sakura e Chiyo-baa"
+      ]
+    },
+    {
+      "image": "https://i0.wp.com/mestretoy.com.br/wp-content/uploads/2020/04/gaara.png",
+      "title": "Gaara foi capturado por quais integrantes da Akatsuki?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Gaara nunca foi capturado",
+        "Itachi e kizame",
+        "Hidan e Kakuzu",
+        "Sasori e Deidara",
+        "Pein e Konan"
+      ]
+    },
+    {
+      "image": "https://pm1.narvii.com/6400/518fdc921c6f3778e9eae25bd0a4918c40cc40b4_00.jpg",
+      "title": "Qual é o nome da cobra do Orochimaru?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "MimTum",
+        "Gamabinch",
+        "Manda",
+        "Gamakichi",
+        "Gamabunta"
+      ]
+    },
+    {
+      "image": "https://rockerzton.files.wordpress.com/2017/01/aw.jpg",
+      "title": "Quem ensinou o rasengan para o Naruto?",
+      "description": "",
+      "answer": 4,
+      "alternatives": [
+        "O quarto hokage",
+        "Asuma",
+        "Kakashi",
+        "Tsunade",
+        "Jiraya"
+      ]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/EFTwMlPWkAEJYlH.jpg",
+      "title": "Naruto usa roupas de que cor na temporada Shippuuden?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Laranja e preto",
+        "Laranja e preto",
+        "Verde e preto",
+        "Preto e prateado",
+        "Vermelha e preto"
+      ]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/C37tyYcWYAA4Gzr.jpg",
+      "title": "Sasuke, em busca de integrantes para seu novo time, decide convidar 3 pessoas. Quais os nomes dessas pessoas?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Kakuzu, Kisame e Juugo",
+        "Kakuzu, Kisame e Juugo",
+        "Suigetsu, Kisame e Kakuzu",
+        "Karin, Juugo e Suigetsu",
+        "karin, Juugo e Kisame"
       ]
     }
   ],
