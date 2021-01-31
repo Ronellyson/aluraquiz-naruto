@@ -27,7 +27,9 @@
     }
   ],
   "external": [
-    ""
+    "https://mgs-quiz.mmazoni.vercel.app/",
+    "https://quiz-valorant.johnatanivini.vercel.app/",
+    "https://alura-quiz.lucasketelhut.vercel.app/"
   ],
   "theme": {
     "colors": {
